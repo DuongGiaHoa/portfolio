@@ -1,0 +1,18 @@
+:host {
+  #fullview {
+    margin-left: 60px;
+  }
+  /* Override Styles */
+  #fv-dots ul li a span {
+    background-color: #888888;
+    border-radius: 0;
+    transition: all 0.5s ease;
+  }
+
+  #fv-dots ul a.active span {
+    width: 11px;
+    height: 11px;
+    transform: rotate(45deg);
+    background-color: #bdbdbd;
+  }
+}

@@ -1,0 +1,17 @@
+@import "variable";
+@import "mixin";
+
+.tags {
+  color: $primary-dark;
+  position: absolute;
+  font-size: 20px;
+  font-family: $belle;
+  &.top-tags {
+    top: 70px;
+    left: 1rem;
+  }
+  &.bottom-tags {
+    bottom: 70px;
+    left: 1rem;
+  }
+}

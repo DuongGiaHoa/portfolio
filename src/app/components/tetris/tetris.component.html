@@ -1,0 +1,11 @@
+<tetris-core id="tetris" #game (lineCleared)="onLineCleared()"></tetris-core>
+<div class="score text-bold">{{score}}</div>
+<div class="controller">
+  <button (click)="game.actionStart()">Start</button>
+  <button (click)="game.actionStop()">Stop</button>
+  <button (click)="game.actionReset()">Reset</button>
+  <button (click)="onRotateButtonPressed()">Rotate</button>
+  <button (click)="onLeftButtonPressed()">Left</button>
+  <button (click)="onRightButtonPressed()">Right</button>
+  <button (click)="onDownButtonPressed()">Down</button>
+</div>

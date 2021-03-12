@@ -1,0 +1,23 @@
+@mixin chromatic-aberration($name, $color) {
+  animation: #{$name} 1s linear infinite alternate both;
+
+  @keyframes #{$name} {
+    @for $i from 0 through 10 {
+      #{$i * 10%} {
+        text-shadow:
+          #{floor(random() * 8) - 5px}
+          #{floor(random() * 2) - 1px}
+          #{floor(random() * 2px)}
+          $color;
+      }
+    }
+  }
+}
+
+@mixin generate-border-tetromino($color){
+  border: .25rem solid $color;
+  border-top-color: lighten($color, 35%);
+  border-left-color: darken($color, 10%);
+  border-right-color: darken($color, 10%);
+  border-bottom-color: darken($color, 35%);
+}

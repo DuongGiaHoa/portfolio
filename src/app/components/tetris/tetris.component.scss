@@ -1,0 +1,46 @@
+@import "../../../scss/main.scss";
+
+:host::ng-deep {
+  tetris-core {
+    board {
+      width: 16.25rem;
+      tile {
+        background: transparent;
+        width: 1.5rem;
+        height: 1.5rem;
+        &.color-box {
+          background: $tetromino-cube;
+          @include generate-border-tetromino($tetromino-cube);
+        }
+        &.color-dot {
+          background: $tetromino-dot;
+          @include generate-border-tetromino($tetromino-dot);
+        }
+        &.color-line {
+          background: $tetromino-line;
+          @include generate-border-tetromino($tetromino-line);
+        }
+        &.color-t {
+          background: $tetromino-t;
+          @include generate-border-tetromino($tetromino-t);
+        }
+        &.color-l {
+          background: $tetromino-l;
+          @include generate-border-tetromino($tetromino-l);
+        }
+        &.color-lr {
+          background: $tetromino-j;
+          @include generate-border-tetromino($tetromino-j);
+        }
+        &.color-z {
+          background: $tetromino-z;
+          @include generate-border-tetromino($tetromino-z);
+        }
+        &.color-s {
+          background: $tetromino-s;
+          @include generate-border-tetromino($tetromino-s);
+        }
+      }
+    }
+  }
+}
