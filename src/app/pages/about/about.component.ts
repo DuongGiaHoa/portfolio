@@ -50,5 +50,6 @@ export class AboutComponent implements OnInit {
         );
       });
     }, 3000);
+
   }
 }
